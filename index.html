@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Article Preview (Component)</title>
   </head>
@@ -14,7 +15,7 @@
           src="/images/drawers.jpg"
           alt="Jade colored, multi shelve drawer."
         />
-        <div>
+        <div class="article-text-content">
           <h1 class="sr-only"></h1>
           <h2 class="article-heading">
             Shift the overall look and feel by adding these wonderful touches to
@@ -34,10 +35,14 @@
                 src="./images/avatar-michelle.jpg"
                 alt="Headshot of Michelle Appleton"
               />
-              <p class="salesperson-name">Michelle Appleton</p>
-              <p>28 Jun 2020</p>
+              <div>
+                <p class="salesperson-name">Michelle Appleton</p>
+                <p>28 Jun 2020</p>
+              </div>
             </div>
-            <button class="share-btn">Share</button>
+            <button class="share-btn">
+              <img src="/images/icon-share.svg" alt="" aria-hidden="true" />
+            </button>
           </div>
         </div>
       </article>

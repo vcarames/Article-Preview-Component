@@ -1,0 +1,107 @@
+/* ********************** */
+/* RESETS */
+/* ********************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* ********************** */
+/* LAYOUT */
+/* ********************** */
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 20px;
+
+  /* TEMP BACKGROUND COLOR */
+  background: rgb(180, 180, 180);
+}
+
+article {
+  max-width: ;
+  border-radius: 10px;
+  overflow: hidden;
+  background: hsl(0, 0%, 100%);
+}
+
+.article-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-text-content {
+  padding: 30px;
+}
+
+.article-heading {
+  margin-bottom: 20px;
+}
+
+.article-paragraph {
+  margin-bottom: 20px;
+}
+
+.salesperson-info-contaner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.salesperson-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.salesperson-image {
+  max-width: 50px;
+  border-radius: 90px;
+}
+
+.share-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
