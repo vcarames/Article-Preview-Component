@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+/* ********************** */
+/* VARIABLES */
+/* ********************** */
+
+:root {
+  --Grayish-Blue: hsl(217, 19%, 35%);
+  --Dark-Blue: hsl(214, 17%, 51%);
+  --Light-Grayish-Blue: hsl(212, 23%, 69%);
+  --White-Grayish-Blue: hsl(210, 46%, 95%);
+
+  --Transition: 0.8s all;
+}
+
 /* ********************** */
 /* RESETS */
 /* ********************** */
@@ -60,15 +77,20 @@ body {
 }
 
 article {
-  max-width: ;
+  max-width: 500px;
+  display: grid;
+  font-family: "Manrope", sans-serif;
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: hsl(0, 0%, 100%);
+  position: relative;
 }
 
 .article-image {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: left;
 }
 
 .article-text-content {
@@ -76,10 +98,14 @@ article {
 }
 
 .article-heading {
+  font-size: 22px;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
 .article-paragraph {
+  font-size: 13px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -100,8 +126,75 @@ article {
   border-radius: 90px;
 }
 
+.salesperson-name {
+  font-weight: 500;
+}
+
+.social-media-links-container {
+  /* position: relative; */
+}
+
 .share-btn {
   width: 40px;
   height: 40px;
   border-radius: 50px;
+  transition: var(--Transition);
+  cursor: pointer;
+}
+
+.share-btn:hover {
+  filter: brightness(1.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.social-media-links {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: var(--Grayish-Blue);
+
+  top: 90%;
+  right: 50%;
+
+  transition: var(--Transition);
+}
+
+.social-media-links p {
+  letter-spacing: 4px;
+}
+
+.social-media-links .icon {
+  font-size: 24px;
+  color: white;
+}
+
+@media (min-width: 730px) {
+  article {
+    max-width: 730px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .article-text-content {
+    padding: 40px;
+  }
+
+  .social-media-links {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background: var(--Grayish-Blue);
+
+    top: 44%;
+    right: -8%;
+  }
 }
