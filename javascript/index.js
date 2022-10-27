@@ -9,7 +9,9 @@ shareButton.addEventListener("click", function () {
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     if (!links.classList.contains("hidden")) {
-      links.classList.remove("hidden");
+      links.classList.add("hidden");
     }
   }
+
+  console.log(event);
 });
