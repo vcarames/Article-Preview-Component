@@ -1,5 +1,4 @@
 const links = document.querySelector(".social-media-links-container");
-console.log(links);
 const shareButton = document.querySelector(".share-btn");
 
 shareButton.addEventListener("click", function () {
@@ -12,6 +11,4 @@ document.addEventListener("keydown", function (event) {
       links.classList.add("hidden");
     }
   }
-
-  console.log(event);
 });
