@@ -71,7 +71,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 body:before {
@@ -91,13 +91,13 @@ body:before {
 /* ********************** */
 
 article {
-  max-width: 500px;
+  max-width: 31.25rem;
   display: grid;
   font-family: "Manrope", sans-serif;
-  border-radius: 10px;
+  border-radius: 0.63rem;
   background: hsl(0, 0%, 100%);
   position: relative;
-  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
   transition: var(--Transition);
 }
 
@@ -106,7 +106,7 @@ article {
   height: 100%;
   object-fit: cover;
   object-position: left;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 0.63rem 0.63rem 0 0;
 }
 
 .article-text-content {
@@ -116,7 +116,7 @@ article {
 .article-heading {
   font-size: clamp(1rem, calc(0.83rem + 0.83vw), 1.25rem);
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 0.94rem;
   color: var(--Grayish-Blue);
   transition: var(--Transition);
 }
@@ -126,7 +126,7 @@ article {
   font-weight: 400;
   color: var(--Dark-Blue);
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .salesperson-info-contaner {
@@ -138,12 +138,12 @@ article {
 .salesperson-info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .salesperson-image {
-  max-width: 38px;
-  border-radius: 90px;
+  max-width: 2.38rem;
+  border-radius: 5.63rem;
 }
 
 .salesperson-name {
@@ -171,9 +171,9 @@ article {
 }
 
 .share-btn {
-  width: 32px;
-  height: 32px;
-  border-radius: 50px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 3.13rem;
   cursor: pointer;
   z-index: 1;
   background: var(--White-Grayish-Blue);
@@ -194,9 +194,9 @@ article {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px 20px;
-  border-radius: 0px 0px 10px 10px;
+  gap: 1.25rem;
+  padding: 1.25rem 1.25rem;
+  border-radius: 0px 0px 0.63rem 0.63rem;
   background: var(--Grayish-Blue);
   bottom: 0%;
   left: 0%;
@@ -206,7 +206,7 @@ article {
 .social-media-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .social-media-links-container p {
@@ -231,17 +231,17 @@ article {
 
 @media (min-width: 50em) {
   article {
-    max-width: 730px;
+    max-width: 45.63rem;
     display: grid;
     grid-template-columns: 40% 60%;
   }
 
   .article-image {
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0.63rem 0 0 0.63rem;
   }
 
   .article-text-content {
-    padding: 36px;
+    padding: 2.25rem;
   }
 
   .social-media-links-container {
@@ -249,24 +249,24 @@ article {
     bottom: 40%;
     left: 77%;
     justify-content: center;
-    padding: 13px 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+    padding: 0.81rem 1.25rem;
+    border-radius: 0.63rem;
+    box-shadow: 0 0 0.94rem 0.06rem rgba(0, 0, 0, 0.2);
   }
 
   .social-media-links-container:after {
     position: absolute;
     content: "";
-    right: 120px;
-    bottom: -14px;
-    border-top: 14px solid var(--Grayish-Blue);
-    border-right: 14px solid transparent;
-    border-left: 14px solid transparent;
+    right: 7.5rem;
+    bottom: -0.88rem;
+    border-top: 0.88rem solid var(--Grayish-Blue);
+    border-right: 0.88rem solid transparent;
+    border-left: 0.88rem solid transparent;
   }
 
   .share-btn {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     z-index: 0;
   }
 
